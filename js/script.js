@@ -37,4 +37,5 @@ const markup = (exercise) => {
 
 const main  = document.createElement("main");
 main.innerHTML = markup(exercise);
-document.body.appendChild(main)
+document.bodyArea.appendChild(main)
+
