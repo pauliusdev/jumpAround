@@ -4,9 +4,45 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width-device-width, initiate-scale=1.0" />
         <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/navBar.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <script src="js/script.js" defer></script>
+        <script src="js/navBar.js" defer></script>
     </head>
     <body>
-        <h1>Hello future cool page....</h1>
+        <header>
+            <div id="brand">
+                <i class="fa fa-female jump" style="color:white; animation-duration: 1s;"></i>
+                <i class="fa fa-male jump" style="color:white; animation-duration: 1.2s;"></i>
+                <i class="fa fa-male jump" style="color:white; animation-duration: 1.4s;"></i>
+                <i class="fa fa-male jump" style="color:white; animation-duration: 1.6s;"></i>
+            </div>
+                <nav>
+                    <ul>
+                        <li><i class="fa fa-home"><a href="/home">-Home</a></i></li>
+                        <li><i class="fa fa-info"><a href="/about">-About</a></i></li>
+                        <li id="login" class="disabled"><a href="/login" >Login</a></li>
+                        <li id="signup" class="disabled"><a href="/signup">Signup</a></li>
+                    </ul>
+                </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li id="login" class="disabled"><a href="/login" >Login</a></li>
+                    <li id="signup" class="disabled"><a href="/signup">Signup</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div>
+            <h1 style="text-align: center; color: white;">Exersice with Lina</h1>
+        </div>
+
     </body>
 </html>
